@@ -22,7 +22,7 @@ body {
 
 .letters {
 	display: inline-block;
-	margin-left: -5px;
+	margin-left: -7px;
 	background-image: url(lizzie_letters.png);
 }
 
