@@ -5,6 +5,65 @@
 <title>CSS Sprite test</title>
 <link rel="stylesheet" href="style.css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+function addingSomething(somethin){
+	console.log(somethin);
+	letters = somethin.split("");
+	console.log(letters + " length: " + letters.length);
+	$("article").append('<br>');
+
+	for (var i =0; i< letters.length ; i++ ) {
+		addaLetter(letters[i]);
+	};
+	$("article").append('<br>');
+	$('#ent_text').val("");
+	//$("article").append('<div class="letters " + somethin ></div>')
+};
+
+//at end throw in <br>
+//somehow convert string to code .. if lowercase letter then
+// do code
+// 97 = a .... 122 is z
+function clean(e) {
+	var textfield = document.getElementById(e);
+	var regex = /[^a-z\ FLS\$]/g; // any char NOT a-z space FLS or $
+	textfield.value = textfield.value.replace(regex, "");
+};
+
+function addaLetter(letter) {
+console.log("addsletter " + letter);
+switch (letter) {
+	case " ":
+		console.log("blank");
+		$("article").append('<div class="blank"></div>');
+	break;
+	case "F":
+		console.log("ff");
+		$("article").append('<div class="letters ff"></div>');
+	break;
+	case "L":
+		console.log("ll");
+		$("article").append('<div class="letters ll"></div>');
+	break;
+	case "$":
+		console.log("lng_s");
+		$("article").append('<div class="letters lng_s"></div>');
+	break;
+	case "S":
+		console.log("ss");
+		$("article").append('<div class="letters ss"></div>');
+	break;
+	default:
+	    console.log("default");
+	    var ha = '<div class = "letters ' + letter + '"></div>';
+		$("article").append(ha);
+}
+};
+
+</script>
+
 </head>
 <body>
 
@@ -12,6 +71,7 @@
 
 	<article class="leftmarg">
 		<h3>Creating typeface using scan from old primer book</h3>
+		<h5>Use F,L,S for double f, double l, double s. Use $ for archaic long s.</h5>
 
 			<div class="letters h"></div>
 			<div class="letters e"></div>
@@ -110,6 +170,10 @@
 			<div class="letters z"></div>
 
 	</article>
+
+<input id="ent_text" name="ent_text" onkeyup="clean('ent_text')" onkeydown="clean('ent_text')"></input>
+
+<button onclick="addingSomething($('#ent_text').val())">SUBMIT LINE OF TEXT</button>
 
 	</div> <!-- end of container -->
 

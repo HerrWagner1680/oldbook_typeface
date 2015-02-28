@@ -20,16 +20,27 @@ body {
 	margin-left: 25px;
 }
 
+input {
+	margin-top: 50px;
+	margin-left: 25px;
+	width: 200px;
+}
+
 .letters {
 	display: inline-block;
-	margin-left: -7px;
+	margin-left: -3px;
 	background-image: url(lizzie_letters.png);
 }
 
 .blank {
 	display: inline-block;
-	width: 50px;
+	width: 40px;
 	height: 80px;
+}
+
+h5 {
+	margin-top: -10px;
+	margin-left: 10px;
 }
 
 .A {
@@ -57,13 +68,13 @@ body {
 }
 
 .d {
-	width: 40px;
+	width: 30px;
 	height: 65px;
-	background-position: 170px -15px;
+	background-position: 165px -15px;
 }
 
 .e {
-	width: 22px;
+	width: 20px;
 	height: 65px;
 	background-position: 126px -15px;
 }
@@ -81,7 +92,7 @@ body {
 }
 
 .g {
-	width: 40px;
+	width: 30px;
 	height: 65px;
 	background-position: -20px -78px;
 }
@@ -99,19 +110,19 @@ body {
 }
 
 .j {
-	width: 40px;
+	width: 30px;
 	height: 65px;
-	background-position: -125px -78px;
+	background-position: -130px -78px;
 }
 
 .k {
-	width: 40px;
+	width: 30px;
 	height: 65px;
 	background-position: -165px -78px;
 }
 
 .l {
-	width: 40px;
+	width: 25px;
 	height: 65px;
 	background-position: 150px -78px;
 }
@@ -147,7 +158,7 @@ body {
 }
 
 .q {
-	width: 40px;
+	width: 30px;
 	height: 65px;
 	background-position: -150px -143px;
 }
@@ -159,21 +170,21 @@ body {
 }
 
 .lng_s {
-	width: 40px;
+	width: 30px;
 	height: 65px;
 	background-position: 100px -143px;
 }
 
 .ss {
-	width: 40px;
+	width: 35px;
 	height: 65px;
 	background-position: 65px -143px;
 }
 
 .s {
-	width: 40px;
+	width: 30px;
 	height: 65px;
-	background-position: -20px -207px;
+	background-position: -25px -207px;
 }
 
 .t {
@@ -183,27 +194,27 @@ body {
 }
 
 .u {
-	width: 40px;
+	width: 30px;
 	height: 65px;
-	background-position: -85px -207px;
+	background-position: -90px -207px;
 }
 
 .v {
-	width: 40px;
+	width: 30px;
 	height: 65px;
-	background-position: -125px -207px;
+	background-position: -130px -207px;
 }
 
 .w {
-	width: 40px;
+	width: 35px;
 	height: 65px;
 	background-position: -165px -207px;
 }
 
 .x {
-	width: 40px;
+	width: 30px;
 	height: 65px;
-	background-position: 145px -207px;
+	background-position: 140px -207px;
 }
 
 .y {
