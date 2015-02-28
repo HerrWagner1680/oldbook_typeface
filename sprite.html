@@ -11,16 +11,24 @@
 function addingSomething(somethin){
 	console.log(somethin);
 	letters = somethin.split("");
+	LL = letters.length;
 	console.log(letters + " length: " + letters.length);
 	$("article").append('<br>');
-
 	for (var i =0; i< letters.length ; i++ ) {
-		addaLetter(letters[i]);
-	};
-	$("article").append('<br>');
+	addaLetter(letters[i]);
+	}
 	$('#ent_text').val("");
 	//$("article").append('<div class="letters " + somethin ></div>')
 };
+
+function deleteLast() {
+	if ($('article br').length <= 1){ return false };
+	
+	for (var i = 0; i < LL; i++ ){
+		$('article div:last-child').remove();
+	}
+	$('article br:last-child').remove();
+}
 
 //at end throw in <br>
 //somehow convert string to code .. if lowercase letter then
@@ -160,6 +168,7 @@ switch (letter) {
 <input id="ent_text" name="ent_text" onkeyup="clean('ent_text')" onkeydown="clean('ent_text')"></input>
 
 <button onclick="addingSomething($('#ent_text').val())">SUBMIT LINE OF TEXT</button>
+<button onclick="deleteLast()">DELETE PREVIOUS LINE</button>
 
 	</div> <!-- end of container -->
 

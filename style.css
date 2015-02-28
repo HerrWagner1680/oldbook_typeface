@@ -11,7 +11,7 @@ body {
 	top: 0px;
 	width: 1200px;
 	height: 800px;
-	position: fixed;
+	position: fixed; /*remove this for scrollability*/
 	background: white;
 	opacity: 0.8;
 }
