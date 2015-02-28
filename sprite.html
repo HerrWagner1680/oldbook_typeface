@@ -41,30 +41,30 @@ function clean(e) {
 };
 
 function addaLetter(letter) {
-console.log("addsletter " + letter);
+// console.log("addsletter " + letter);
 switch (letter) {
 	case " ":
-		console.log("blank");
+		// console.log("blank");
 		$("article").append('<div class="blank"></div>');
 	break;
 	case "F":
-		console.log("ff");
+		// console.log("ff");
 		$("article").append('<div class="letters ff"></div>');
 	break;
 	case "L":
-		console.log("ll");
+		// console.log("ll");
 		$("article").append('<div class="letters ll"></div>');
 	break;
 	case "$":
-		console.log("lng_s");
+		// console.log("lng_s");
 		$("article").append('<div class="letters lng_s"></div>');
 	break;
 	case "S":
-		console.log("ss");
+		// console.log("ss");
 		$("article").append('<div class="letters ss"></div>');
 	break;
 	default:
-	    console.log("default");
+	    // console.log("default");
 	    var ha = '<div class = "letters ' + letter + '"></div>';
 		$("article").append(ha);
 }
